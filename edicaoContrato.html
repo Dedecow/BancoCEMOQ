@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edição de Contrato</title>
-  <link rel="stylesheet" href="css/edicaoContratoEstilos.css">
+  <title>Sistema de Gestão de Ativos - Banco Cemoq</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Edição de Contrato</h1>
+  <div class="container mt-5">
+    <h1 class="mb-4">Edição de Contrato</h1>
 
-  <form id="editarContratoForm">
-    <label for="numeroContrato">Número do Contrato:</label>
-    <input type="text" id="numeroContrato" required>
+    <form id="editarContratoForm">
+      <div class="form-group">
+        <label for="numeroContrato">Número do Contrato:</label>
+        <input type="text" class="form-control" id="numeroContrato" required>
+      </div>
 
-    <label for="novoValorContrato">Novo Valor do Contrato:</label>
-    <input type="number" id="novoValorContrato" required>
+      <div class="form-group">
+        <label for="novoValorContrato">Novo Valor do Contrato:</label>
+        <input type="number" class="form-control" id="novoValorContrato" required>
+      </div>
 
-    <label for="novaDataAssinatura">Nova Data de Assinatura:</label>
-    <input type="date" id="novaDataAssinatura" required>
+      <div class="form-group">
+        <label for="novaDataAssinatura">Nova Data de Assinatura:</label>
+        <input type="date" class="form-control" id="novaDataAssinatura" required>
+      </div>
 
-    <button type="submit">Editar Contrato</button>
-  </form>
+      <button type="submit" class="btn btn-primary">Editar Contrato</button>
+    </form>
+  </div>
 
   <script src="app.js"></script>
 </body>
