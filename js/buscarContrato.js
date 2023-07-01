@@ -37,8 +37,12 @@ function capturarDados() {
   }
   
   // Capturar o evento de envio do formulário
-  document.getElementById('formContrato').addEventListener('submit', function(event) {
+const formContrato = document.getElementById('formContrato');
+if (formContrato !== null) {
+  formContrato.addEventListener('submit', function(event) {
     event.preventDefault(); // Impedir o envio do formulário
     capturarDados(); // Chamar a função para capturar os dados
   });
+}
+
   
