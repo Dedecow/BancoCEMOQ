@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,29 +16,29 @@
 
   <main class="py-4">
     <div class="container">
-      <h2>Formulário de Cadastro</h2>
+      <h2 class = "mb-4">Formulário de Cadastro</h2>
       <form>
-        <div class="mb-3">
+        <div class="form-group">
           <label for="cliente" class="form-label">Nome do Cliente</label>
           <input type="text" class="form-control" id="cliente" placeholder="Digite o nome do cliente">
         </div>
-        <div class="mb-3">
+        <div class="form-group">
           <label for="numeroContrato" class="form-label">Número do Contrato</label>
           <input type="text" class="form-control" id="numeroContrato" placeholder="Digite o número do contrato">
         </div>
-        <div class="mb-3">
+        <div class="form-group">
           <label for="dataAssinatura" class="form-label">Data de Assinatura</label>
           <input type="date" class="form-control" id="dataAssinatura">
         </div>
-        <div class="mb-3">
+        <div class="form-group">
           <label for="valorContrato" class="form-label">Valor do Contrato</label>
           <div class="input-group">
             <span class="input-group-text">R$</span>
-            <input type="number" class="form-control" id="valorContrato" placeholder="Digite o valor do contrato">
+            <input type="number" class="form-control" id="valorContrato" placeholder="Valor do contrato">
           </div>
         </div>
-        <div class="mb-3">
-          <label for="vencimento" class="form-label">Data de Vencimento</label>
+        <div class="form-group">
+          <label for="vencimento" class="form-label">Vencimento do contrato</label>
           <input type="date" class="form-control" id="vencimento">
         </div>
         <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
@@ -58,6 +58,5 @@
   <script src="js/listarContrato.js" defer></script>
   <script src="js/editarContrato.js" defer></script>
   <script src="js/gravarDados.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
