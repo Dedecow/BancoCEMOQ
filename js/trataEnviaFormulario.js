@@ -1,5 +1,5 @@
 // Selecione o formulário pelo seu ID ou usando outro seletor adequado
-const form = document.getElementById('meuFormulario');
+var form = document.getElementById('meuFormulario');
 
 // Adicione um ouvinte de evento para o evento de envio do formulário
 form.addEventListener('submit', function(event) {
@@ -7,11 +7,11 @@ form.addEventListener('submit', function(event) {
   event.preventDefault();
 
   // Coleta os valores dos campos do formulário
-  const nomeCliente = document.getElementById('cliente').value;
-  const numeroContrato = document.getElementById('numeroContrato').value;
-  const dataAssinatura = document.getElementById('dataAssinatura').value;
-  const valorContrato = document.getElementById('valorContrato').value;
-  const vencimento = document.getElementById('vencimento').value;
+  var nomeCliente = document.getElementById('cliente').value;
+  var numeroContrato = document.getElementById('numeroContrato').value;
+  var dataAssinatura = document.getElementById('dataAssinatura').value;
+  var valorContrato = document.getElementById('valorContrato').value;
+  var vencimento = document.getElementById('vencimento').value;
 
   // Realize a validação dos dados, se necessário
   if (!nomeCliente || !numeroContrato || !dataAssinatura || !valorContrato || !vencimento) {

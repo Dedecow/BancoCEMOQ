@@ -1,5 +1,5 @@
 // Contratos armazenados na memória
-const contratos = [
+var contratos = [
     {
       nomeCliente: 'João',
       numeroContrato: '001',

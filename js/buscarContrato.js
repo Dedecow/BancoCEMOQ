@@ -1,13 +1,13 @@
 // Função para capturar os dados do formulário
 function capturarDados() {
     // Capturar os valores dos campos do formulário
-    const nomeCliente = document.getElementById('nomeCliente').value;
-    const numeroContrato = document.getElementById('numeroContrato').value;
-    const valorContrato = document.getElementById('valorContrato').value;
-    const dataAssinatura = document.getElementById('dataAssinatura').value;
+    var nomeCliente = document.getElementById('nomeCliente').value;
+    var numeroContrato = document.getElementById('numeroContrato').value;
+    var valorContrato = document.getElementById('valorContrato').value;
+    var dataAssinatura = document.getElementById('dataAssinatura').value;
   
     // Criar um objeto com os dados capturados
-    const contrato = {
+    var contrato = {
       nomeCliente: nomeCliente,
       numeroContrato: numeroContrato,
       valorContrato: valorContrato,
@@ -37,7 +37,7 @@ function capturarDados() {
   }
   
   // Capturar o evento de envio do formulário
-const formContrato = document.getElementById('formContrato');
+var formContrato = document.getElementById('formContrato');
 if (formContrato !== null) {
   formContrato.addEventListener('submit', function(event) {
     event.preventDefault(); // Impedir o envio do formulário
